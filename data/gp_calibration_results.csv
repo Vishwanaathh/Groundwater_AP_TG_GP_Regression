@@ -1,0 +1,7 @@
+nominal_confidence,empirical_coverage,gap_percentage_points,verdict
+0.5,0.6340468909276249,13.404689092762489,underconfident (intervals wider than necessary)
+0.68,0.77217125382263,9.217125382262992,underconfident (intervals wider than necessary)
+0.8,0.8537206931702345,5.372069317023442,underconfident (intervals wider than necessary)
+0.9,0.9016309887869521,0.16309887869521145,well-calibrated (within 3 percentage points)
+0.95,0.9347604485219164,-1.5239551478083535,well-calibrated (within 3 percentage points)
+0.99,0.9663608562691132,-2.3639143730886825,well-calibrated (within 3 percentage points)
