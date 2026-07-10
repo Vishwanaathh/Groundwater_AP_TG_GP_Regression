@@ -1,3 +1,37 @@
-earthengine-api 
-pandas 
+# package.txt
+# Install with: pip install -r package.txt
+#
+# Covers every script in this project:
+#   build_ap_ts_dataset.py, build_gp_model.py, build_ml_baselines.py,
+#   evaluate_models.py, plot_results.py, check_gp_calibration.py,
+#   check_gp_significance.py, check_calibration_comparison.py,
+#   gp_permutation_importance.py, performance_by_group.py,
+#   performance_drought_vs_normal.py, build_kan_model.py, ee_health_check.py
+
+# --- Core data handling ---
+pandas
 numpy
+joblib
+
+# --- Earth Engine data extraction (build_ap_ts_dataset.py, ee_health_check.py) ---
+earthengine-api
+
+# --- Modeling (GP, baselines) ---
+scikit-learn
+
+# --- Optional gradient boosting baselines (build_ml_baselines.py) ---
+# Skipped gracefully by the script if not installed -- only needed if you
+# want XGBoost/CatBoost/LightGBM included in the comparison.
+xgboost
+catboost
+lightgbm
+
+# --- Statistics (significance testing, calibration checks) ---
+scipy
+
+# --- Plotting (plot_results.py and all diagnostic scripts) ---
+matplotlib
+
+# --- Only needed if you go back to the from-scratch KAN model ---
+# (build_kan_model.py -- not part of the final GP-based paper)
+# torch
