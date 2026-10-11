@@ -97,7 +97,7 @@ try:
     ee.Initialize(project="")
 except Exception:
     print("Earth Engine not initialized. Run ee.Authenticate() and "
-          "ee.Initialize(project='sunlit-plasma-491217-u7') first, then re-run this script.")
+          "ee.Initialize(project='') first, then re-run this script.")
     raise
 
 # ---------------------------------------------------------------------------
